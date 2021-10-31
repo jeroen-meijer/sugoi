@@ -1,0 +1,17 @@
+name: sugoi
+description: A set of interesting and fun UI components, animations and routes for Flutter.
+version: 0.0.1
+homepage: https://github.com/jeroen-meijer/sugoi
+repository: https://github.com/jeroen-meijer/sugoi
+
+environment:
+  sdk: ">=2.13.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^2.4.0
