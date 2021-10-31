@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 class ZoomPageRoute<T> extends PageRouteBuilder<T> {
   ZoomPageRoute({
-    Curve curve = Curves.linearToEaseOut,
-    Duration transitionDuration = const Duration(milliseconds: 600),
+    Curve transitionCurve = Curves.linearToEaseOut,
+    Duration transitionDuration = const Duration(milliseconds: 500),
     required WidgetBuilder builder,
   }) : super(
           transitionDuration: transitionDuration,
-          transitionsBuilder: createTranstionBuilder(curve),
+          transitionsBuilder: createTranstionBuilder(transitionCurve),
           pageBuilder: (context, _, __) {
             return builder(context);
           },

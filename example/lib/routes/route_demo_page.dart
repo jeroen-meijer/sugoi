@@ -27,6 +27,7 @@ class RouteDemoPage extends StatelessWidget {
       ),
       body: Center(
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // "Back" and "Forward" button
             ElevatedButton.icon(
@@ -36,6 +37,7 @@ class RouteDemoPage extends StatelessWidget {
               icon: const Icon(Icons.arrow_back_ios_new_rounded),
               label: const Text('Back'),
             ),
+            const SizedBox(width: 8),
             ElevatedButton.icon(
               onPressed: () {
                 Navigator.of(context).push(
