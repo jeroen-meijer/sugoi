@@ -1,6 +1,20 @@
 import 'package:flutter/material.dart';
 
+/// {@template zoom_page_route}
+/// A page route that transitions using a zoom animation.
+///
+/// The old page will scale up by 20% when this route transitions in, while the
+/// new page will be zoomed into from 80% to 100%. Simultaneously, the old page
+/// will be faded out while the new page fades in, creating a fading and scaling
+/// transition effect.
+///
+/// A `transitionCurve` and `transitionDuration` can be provided to customize
+/// the transition animation.
+///
+/// The animation is built by [createTranstionBuilder].
+/// {@endtemplate}
 class ZoomPageRoute<T> extends PageRouteBuilder<T> {
+  /// {@macro zoom_page_route}
   ZoomPageRoute({
     Curve transitionCurve = Curves.linearToEaseOut,
     Duration transitionDuration = const Duration(milliseconds: 500),
@@ -13,6 +27,8 @@ class ZoomPageRoute<T> extends PageRouteBuilder<T> {
           },
         );
 
+  /// Creates a [RouteTransitionsBuilder] that uses the given [Curve] that
+  /// builds a fading and scaling transition.
   static RouteTransitionsBuilder createTranstionBuilder(Curve curve) {
     return (context, animationIn, animationOut, child) {
       final reverseCurve = curve.flipped;

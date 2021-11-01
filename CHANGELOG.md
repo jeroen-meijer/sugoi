@@ -1,3 +1,8 @@
+# 1.0.0+3
+
+- docs: add docs to `ZoomPageRoute`
+- chore: enforce docs on all public members
+
 # 1.0.0+2
 
 - docs: fix asset references
