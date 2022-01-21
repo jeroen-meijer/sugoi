@@ -15,7 +15,9 @@ This Flutter package is a growing collection of widgets, animations and routes t
 
 ### Widgets
 
-_None yet._
+| Name                                                          | Description                                                                        | Preview                                                                                                                     |
+| ------------------------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| [`StackedScrollView`](lib/src/lists/stacked_scroll_view.dart) | A scrollable widget with padding for a persistent foreground widget placed on top. | <img src="https://github.com/jeroen-meijer/sugoi/raw/main/doc/assets/stacked_scroll_view_demo.gif" style="height: 300px" /> |
 
 ### Routes
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sugoi_gallery/lists/lists.dart';
 import 'package:sugoi_gallery/routes/routes.dart';
 
 class HomePage extends StatelessWidget {
@@ -18,6 +19,14 @@ class HomePage extends StatelessWidget {
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () {
               Navigator.of(context).push(RoutesPage.route());
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.list_rounded),
+            title: const Text('List Widgets'),
+            trailing: const Icon(Icons.arrow_forward_ios),
+            onTap: () {
+              Navigator.of(context).push(ListWidgetsPage.route());
             },
           ),
         ],

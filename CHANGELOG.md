@@ -1,3 +1,8 @@
+# 1.1.0
+
+- feat: add `StackedScrollView` widget
+- feat: add macOS example project
+
 # 1.0.0+2
 
 - docs: fix asset references
