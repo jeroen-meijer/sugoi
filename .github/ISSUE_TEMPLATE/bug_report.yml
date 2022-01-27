@@ -1,0 +1,81 @@
+name: Bug Report
+description: Create a report to help us improve.
+title: "fix:  "
+labels: ["bug", "triage"]
+assignees:
+  - jeroen-meijer
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: |
+        Please search to see if an issue already exists for the bug you encountered.
+      options:
+        - label: I have searched the existing issues.
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: |
+        What version of Sugoi are you running?
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: |
+        Give us a clear and concise description of what the bug is and what happened.
+      placeholder: Sugoi throws an error if I run this command...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: |
+        What steps can we take to reproduce the bug?
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: |
+        What did you expect to happen?
+      placeholder: |
+        When running ..., Sugoi should ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: |
+        If you have any screenshots, please attach them here.
+    validations:
+      required: false
+
+  - type: textarea
+    id: comments
+    attributes:
+      label: Additional context and comments
+      description: |
+        Anything else you want to say?
+    validations:
+      required: false
